@@ -51,7 +51,7 @@ const TeamCard = memo(function TeamCard({
           src={member.image}
           alt={member.name}
           fill
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className="object-cover object-top"
           unoptimized
         />
@@ -112,31 +112,33 @@ export default function TeamSection() {
     <section
       ref={sectionRef}
       id="about"
-      className="skew-section mx-auto max-w-7xl px-6 py-24 md:py-32 lg:px-8"
+      className="skew-section py-24 md:py-32 lg:py-40"
     >
-      <div className="mb-16 text-center">
-        <p
-          className="mb-2 text-sm font-medium uppercase tracking-[0.3em] text-accent"
-          style={{ fontFamily: "var(--font-mono)" }}
-        >
-          The Team
-        </p>
-        <h2
-          className="text-4xl font-bold md:text-5xl"
-          style={{ fontFamily: "var(--font-heading)" }}
-          data-cursor="text"
-        >
-          Meet the Creators
-        </h2>
-      </div>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mb-16 text-center">
+          <p
+            className="mb-2 text-sm font-medium uppercase tracking-[0.3em] text-accent"
+            style={{ fontFamily: "var(--font-mono)" }}
+          >
+            The Team
+          </p>
+          <h2
+            className="text-4xl font-bold md:text-5xl"
+            style={{ fontFamily: "var(--font-heading)" }}
+            data-cursor="text"
+          >
+            Meet the Creators
+          </h2>
+        </div>
 
-      <div
-        ref={gridRef}
-        className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
-      >
-        {TEAM.map((member) => (
-          <TeamCard key={member.name} member={member} />
-        ))}
+        <div
+          ref={gridRef}
+          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          {TEAM.map((member) => (
+            <TeamCard key={member.name} member={member} />
+          ))}
+        </div>
       </div>
     </section>
   );

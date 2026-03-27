@@ -66,7 +66,7 @@ export default function VideoSection() {
       <div className="video-overlay" />
 
       {/* Content */}
-      <div ref={contentRef} className="video-content">
+      <div ref={contentRef} className="video-content mx-auto max-w-4xl px-6">
         <p
           className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-accent"
           style={{ fontFamily: "var(--font-mono)" }}

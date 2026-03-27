@@ -42,7 +42,7 @@ export default function Navigation() {
           scrolled ? "nav-scrolled" : "bg-transparent"
         )}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
           {/* Logo */}
           <a
             href="#hero"

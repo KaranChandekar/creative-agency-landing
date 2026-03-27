@@ -106,7 +106,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute left-1/4 top-1/4 h-[500px] w-[500px] rounded-full bg-accent/5 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-1/4 right-1/4 h-[400px] w-[400px] rounded-full bg-secondary/5 blur-[100px]" />
 
-      <div className="relative z-10 mx-auto w-full max-w-5xl px-6 text-center lg:px-8">
+      <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-6 text-center lg:px-8">
         <p
           className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-accent"
           style={{ fontFamily: "var(--font-mono)" }}
@@ -116,7 +116,7 @@ export default function Hero() {
 
         <h1
           ref={titleRef}
-          className="mx-auto mb-8 text-5xl font-bold leading-[1.1] tracking-tight md:text-7xl lg:text-8xl"
+          className="mb-8 text-5xl font-bold leading-[1.1] tracking-tight md:text-7xl lg:text-8xl"
           style={{ fontFamily: "var(--font-display)" }}
         >
           We Craft Digital Experiences
@@ -124,7 +124,7 @@ export default function Hero() {
 
         <p
           ref={subtitleRef}
-          className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-text/60 md:text-xl"
+          className="mb-12 max-w-2xl text-center text-lg leading-relaxed text-text/60 md:text-xl"
           style={{ fontFamily: "var(--font-body)" }}
         >
           Blending cutting-edge technology with bold creative vision to build

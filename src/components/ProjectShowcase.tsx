@@ -161,9 +161,9 @@ export default function ProjectShowcase() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="work" className="relative overflow-hidden">
+    <section ref={sectionRef} id="work" className="relative overflow-hidden pt-16 md:pt-24">
       {/* Section header — visible on all sizes */}
-      <div className="mx-auto max-w-7xl px-6 pt-24 pb-12 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
         <p
           className="mb-2 text-sm font-medium uppercase tracking-[0.3em] text-accent"
           style={{ fontFamily: "var(--font-mono)" }}
@@ -182,7 +182,7 @@ export default function ProjectShowcase() {
       <div
         ref={trackRef}
         className="hidden lg:flex items-end gap-10 pb-24"
-        style={{ paddingLeft: "max(2rem, calc((100vw - 80rem) / 2 + 2rem))" }}
+        style={{ paddingLeft: "max(2rem, calc((100vw - 80rem) / 2 + 1.5rem))", paddingRight: "2rem" }}
       >
         {PROJECTS.map((project) => (
           <ProjectCard key={project.id} project={project} />
